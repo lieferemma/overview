@@ -33,8 +33,8 @@ Verringere Menschenmengen in Läden oder auf Märkten, ohne deinen Einkauf ausfa
 
 Wir wollen das Rad nicht neu erfinden, deshalb hier einige Differenzierungskriterien:
 
- - Das Projekt hat kein kommerzielles Interesse (zumindest nicht auf der Seite der Plattform)  
-- Im Gegensatz z.B. zum Pizza-Lieferservice soll der Shop mobil sein und neue Artikel nur selten an einer zentralen - Stelle abholen müssen.
+- Das Projekt hat kein kommerzielles Interesse (zumindest nicht auf der Seite der Plattform)  
+- Im Gegensatz z.B. zum Pizza-Lieferservice soll der Shop mobil sein. Der Kunde kann neue Artikel nur innerhalb eines bestimmten Zeitfensters an einer vorgegeben Stelle abholen.
 - Lieferemma verarbeitet keine personenbezogenen Daten, es wird mit anonymen  Transaciton IDs gearbeitet
 - Virtuelle Lieferpunkte als temporäre Marktstände
 - Die Nutzung der Plattform ist für Anbieter und Kunde kostenlos
@@ -44,16 +44,99 @@ Lieferemma positioniert sich damit zwischen einem klassischen Lieferdienst und d
 
 ## How we built it
 
+Lieferemma entstand im Rahmen des [#WIRVSVIRUS Hackathons](https://wirvsvirushackathon.org/) als komplette Neutentwicklung.
+Für das Projekt haben Experten aus den Bereichen Buisness, Software, Design und Marketing zusammengearbeitet um innerhalb von zwei Tagen ein erlebares Produkt zu entwickeln. 
+
+Lieferemma besteht aus 4 Komponenten den Sourcecode der Komponenten findet man unter den folgenden Links auf github
+
+1. [Website](https://github.com/lieferemma/website) 
+2. [App](FIXME)
+3. [Backend](https://github.com/lieferemma/backend)
+4. [API](https://github.com/lieferemma/api)
+
+
+FIXME: hier kurz erklären wie alles technisch verbunden ist 
+
+Im folgenden ein kurzer überblick über die Komponenten 
+
+### Website
+
+Die Webseite [lieferemma.de](lieferemma.de) informiert Kunden und Händler über das Produkt. Händler können sich später über die Webseite als Produzenten registrieren. Kunden finden dort links zu den Apps im Playstore/Appstore. Außerdem kann man als Händler eine Flyer herunterladen um die Kunden auf lieferemma aufmerksam zu machen. 
+Die Webseite wurde mit dem opensource framework [HUGO](https://gohugo.io/) erstellt.
+
+
+### App
+
+Die App wird vom Endkunden und dem Fahrer genutzt. 
+
+
+
+Entwickelt  mit [Ionic](https://ionicframework.com/) einem opensource framework, dass die Entwicklung von hybriden Apps ermöglicht.
+Dadruch können wir unsere App als Android, iOS -und web-App anbieten. 
+
+FIXME: flow mit bildern 
+
+
+### Backend
+
+FIXME:badsf
+Der 
+cloud nativ tooling: minio, pgadim
+Datenbanken: postgres
+Blob-Storage :minio
+api: gRPC sicherer verbindung zum backend load
+
+Kubernetes ready
+architektur technologien skalierbarkeit
+
+in rust 
+
+FIXME: bilder mit flow zum erklären
+
+
+### API
+
+gRPC
+- http2 ermöglicht einfache skalierung ( buzzwords für http2 , bessere verbindungsparallität )
+- stub code generierung ( gut für opensource contribtuions, man kann leicht contribtue) neue clients lassen sich einfach einbinden z.B für verschiedene Plattformen
+- ap
+- tech stack 
+- komponenten 
+- 
+
 - 
 
 ## Challenges we ran into
 
+- time restriction
+- building something that is easy to use is hard 
+- remote work ( jitsi, slack super toll )
+
 ## Accomplishments that we're proud of
+
+- website und flyer bereits fertig ( 80%)
+- neues team. 
+- gut funktionierende domainübergreifende arbeit ( zusammen arbeit zwischen Designern, Buisness Developer, Software entwickler, Marketingexperten )
+- app angefangen 
+- video 
+- started development of backend (Architecuter defined, docker container deployed on Server  ) 
+- 
+- Docker-compose mit allen componenten ( minio, postgres, pgadmin, backend-logik kubernetes ready! )
+- Backend A
+- API definiert 
+- 
 
 ## What we learned
 
+- nicht trival da zeit und raum achse 
+- 
+
 ## What's next for 1_001_a_lebensmittel-matching_31_Lieferemma
 
+- entwicklung weiterführen backend und frontent 
+- emma ist erlebbar aber noch nicht fertig 
+- beta test phase ab 27.03 
+- einbindung von bezahl diensten ( paypal, stripe)
 
 # Englisch
 
