@@ -32,7 +32,7 @@ Wir wollen das Rad nicht neu erfinden, deshalb hier einige Differenzierungskrite
 
 - Das Projekt hat kein kommerzielles Interesse (zumindest nicht auf der Seite der Plattform)  
 - Im Gegensatz z.B. zum Pizza-Lieferservice soll der Shop mobil sein. Der Kunde kann neue Artikel nur innerhalb eines bestimmten Zeitfensters an einer vorgegeben Stelle abholen.
-- Lieferemma verarbeitet keine personenbezogenen Daten, es wird mit anonymen  Transaciton IDs gearbeitet
+- Lieferemma verarbeitet keine personenbezogenen Daten, es wird mit anonymen Transaction IDs gearbeitet
 - Virtuelle Lieferpunkte als temporäre Marktstände
 - Die Nutzung der Plattform ist für Anbieter und Kunde kostenlos
 - Das Projekt ist Open Source 
@@ -42,17 +42,15 @@ Lieferemma positioniert sich damit zwischen einem klassischen Lieferdienst und d
 ## How we built it
 
 Lieferemma entstand im Rahmen des [#WIRVSVIRUS Hackathons](https://wirvsvirushackathon.org/) als komplette Neutentwicklung.
-Für das Projekt haben Experten aus den Bereichen Buisness, Software, Design und Marketing zusammengearbeitet um innerhalb von zwei Tagen ein erlebares Produkt zu entwickeln. 
+Für das Projekt haben Experten aus den Bereichen Buisness, Software, Design und Marketing zusammengearbeitet um innerhalb von zwei Tagen ein erlebbares Produkt zu entwickeln. 
 
-Lieferemma besteht aus 4 Komponenten den Sourcecode der Komponenten findet man unter den folgenden Links auf github
+Lieferemma besteht aus 4 Komponenten den Sourcecode der Komponenten findet man auf Github unter den folgenden Links:
 
 1. [Website](https://github.com/lieferemma/website) 
 2. [App](https://github.com/lieferemma/frontend)
 3. [Backend](https://github.com/lieferemma/backend)
 4. [API](https://github.com/lieferemma/api)
 
-
-FIXME: hier kurz erklären wie alles technisch verbunden ist 
 
 Im Folgenden ein kurzer Überblick über die Komponenten.
 
@@ -64,15 +62,32 @@ Die Webseite wurde mit dem opensource framework [HUGO](https://gohugo.io/) erste
 
 ### App
 
-Die App wird vom Endkunden und dem Fahrer genutzt. 
+Die App wird vom Endkunden und dem Fahrer genutzt. Unten sieht man den Start Bildschirmt 
+</figure>
+<img src="https://github.com/lieferemma/overview/raw/master/res/customer/001_index.png" alt="start"
+	title="Start Bildschirm" width="50%" height="50%" />
+	
+</figure>
+
+Hier sieht man den Bestellprozess des Kunden. Der Kunde wählt auf der Karte den Lieferpunkt aus. Danach kann er Bestellen. Auf der Karte wird ihm die Position des Lieferwagens und seine Abholzeit und Code am Abholpunkt gezeigt
+
+<table>
+ <tr>
+<td><img src="https://github.com/lieferemma/overview/raw/master/res/customer/002_map.png" alt="start"
+	title="Start Bildschirm"   /></td>
+<td><img src="https://github.com/lieferemma/overview/raw/master/res/customer/003_order.png" alt="start"
+	title="Start Bildschirm"   /></td>
+    <td><img src="https://github.com/lieferemma/overview/raw/master/res/customer/004_map.png" alt="start"
+	title="Start Bildschirm"   /></td>
+    
+</tr>
+</table>
 
 
 
+Entwickelt mit [Ionic](https://ionicframework.com/) einem Open Source Framework, dass die Entwicklung von hybriden Apps ermöglicht.
+Dadurch können wir unsere App als Android, iOS -und Web-App anbieten. 
 
-Entwickelt  mit [Ionic](https://ionicframework.com/) einem opensource framework, dass die Entwicklung von hybriden Apps ermöglicht.
-Dadurch können wir unsere App als Android, iOS -und web-App anbieten. 
-
-FIXME: flow mit bildern 
 
 
 ### Backend
@@ -80,12 +95,10 @@ FIXME: flow mit bildern
 Das Backend verwaltet das Inventar des mobilen Shops, die Routen der Fahrer und die Bestellungen der Kunden.
 
 
-FIXME: bild der architektur
-
 Der Fokus wurde bei der Architektur und Implementierung auf gute Skalierbarkeit gelegt. 
-Durch die Verwendeung von cloud native Technologien wie minIO, pgadmin & Docker lässt sich das Backend leicht in der Cloud
+Durch die Verwendeung von Cloud nativen Technologien wie minIO, Postgres, pgadmin und Docker lässt sich das Backend leicht in der Cloud
 oder auf einem Server deployen und durch die Verwendung von Kubernetes skalieren. 
-Für die Implementierung der Backendlogik wurde [Rust](https://www.rust-lang.org/) verwendet. Rust ermöglicht als Systemprogrammiersprache die optimale nutzung von Rechenleistung auf dem Server.  
+Für die Implementierung der Backendlogik wurde [Rust](https://www.rust-lang.org/) verwendet. Rust ermöglicht als Systemprogrammiersprache die optimale Nutzung von Rechenleistung auf dem Server.  
 Das Backend kommuniziert mit den verschiedenen Clients via gRPC. Dadurch ist eine sichere und gut skalierbare Verbindung
 zwischen Clients und Server möglich.
 
@@ -130,8 +143,8 @@ Wir haben unser Ziel erreicht ein erlebbares Produkt zu bauen.
 
 ## What we learned
 
-- nicht trival da zeit und raum achse 
-- possible in with remote work 
+Wir waren sehr glücklich darüber, lernen zu können, dass es Möglich ist innerhalb kurzer Zeit, ein remote arbeitendes
+Team zu Formen, welches sehr schnell eine Idee umsetzen  kann. 
 
 ## What's next for 1_001_a_lebensmittel-matching_31_Lieferemma
 
@@ -144,4 +157,4 @@ um eine für Kunden und Händler nutzbare Lösung zu pilotieren. Wir wollen noch
 - Implementierung der API zur Kommunikation zwischen App und Backend 
 - Einbindung von bargeldlosen Bezahldiensten ( z.B. Paypal oder Stripe)
 
-Unserer nächster Meilenstein ist der Begin einer Beta-Testphase ab dem 27.03 dafür werden wir uns mit 
+Unserer nächster Meilenstein ist der Beginn einer Beta-Testphase ab dem 27.03 dafür werden wir uns mit Early Adoptern zusammen tun. 
