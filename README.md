@@ -71,6 +71,7 @@ Die App wird vom Endkunden und dem Fahrer genutzt.
 
 
 
+
 Entwickelt  mit [Ionic](https://ionicframework.com/) einem opensource framework, dass die Entwicklung von hybriden Apps ermöglicht.
 Dadruch können wir unsere App als Android, iOS -und web-App anbieten. 
 
