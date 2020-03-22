@@ -79,64 +79,73 @@ FIXME: flow mit bildern
 
 ### Backend
 
-FIXME:badsf
-Der 
-cloud nativ tooling: minio, pgadim
-Datenbanken: postgres
-Blob-Storage :minio
-api: gRPC sicherer verbindung zum backend load
+Das Backend verwaltet das Inventar des mobilen Shops, die Routen der Fahrer und die Bestellungen der Kunden.
 
-Kubernetes ready
-architektur technologien skalierbarkeit
 
-in rust 
+FIXME: bild der architektur
 
-FIXME: bilder mit flow zum erklären
+Der Fokus wurde bei der Architektur und Implementierung auf gute Skalierbarkeit gelegt. 
+Durch die Verwendeung von cloud native Technologien wie minIO, pgadmin, Docker lässt sich das Backend leicht in der Cloud
+oder auf einem Server deployen und durch die Verwendung von Kubernetes skalieren. 
+Für die Implementierung der Backendlogik wurde [Rust](FIXME:Link) verwendet. Rust ermöglicht als Systemprogrammiersprache die optimale nutzung von Rechenleistung auf dem Server.  
+Das Backend kommuniziert mit den verschiedenen Clients via gRPC. Dadurch ist eine sichere und gut skalierbare Verbindung
+zwischen Clients und Server möglich.
 
 
 ### API
 
-gRPC
-- http2 ermöglicht einfache skalierung ( buzzwords für http2 , bessere verbindungsparallität )
-- stub code generierung ( gut für opensource contribtuions, man kann leicht contribtue) neue clients lassen sich einfach einbinden z.B für verschiedene Plattformen
-- ap
-- tech stack 
-- komponenten 
-- 
+Das Backend und die verschieden Clients kommunizieren via [gRPC](https://grpc.io/).
+gRPC basiertauf dem Standard HTTP/2 und Protocol Buffers und ist ein Verfahren zum  Aufruf von Funktionen in verteilten Computersystemen. Im Vergleich zu JSON oder XML hat gRPC folgende Vorteile:
 
-- 
+- HTTP2 bietet hörere Übertragungsgeschwindigkeit und Sicherheit
+- gRPC lässt sich durch loadbalancing leicht vertikal skalieren 
+- Durch Code-Generieungs tools kann man leicht neue clients für verschiede Plattformen einbinden
+- Protocol Buffers ermöglicht eine effizentere Datenübertragung als XML und JSON
+
+
 
 ## Challenges we ran into
 
-- time restriction
-- building something that is easy to use is hard 
-- remote work ( jitsi, slack super toll )
+Die wir hatten im Rahmen vom Hackerthon viele verschiede Herausvorderungen.
+Die größte Herausfordeung die wir hatten war Zeit. Wir mussten in zwei Tagen:
+- Ein Team bilden
+- Eine Idee generieren
+- Den Fokus der Umsetzung festlegen um in kurzer Zeit ein erlebares Produkt zu bauen.
+
+Dadurch das alle Teammitglieder Remote arbeiteten mussten wir uns koordinieren, dabei waren Tools wie jitsi und Slack sehr hilfreich. 
+Bei Arbeiten haben auch festgestellt, dass es sehr schwer ist etwas leicht nutzbares zu bauen.
+
 
 ## Accomplishments that we're proud of
 
-- website und flyer bereits fertig ( 80%)
-- neues team. 
-- gut funktionierende domainübergreifende arbeit ( zusammen arbeit zwischen Designern, Buisness Developer, Software entwickler, Marketingexperten )
-- app angefangen 
-- video 
-- started development of backend (Architecuter defined, docker container deployed on Server  ) 
-- 
-- Docker-compose mit allen componenten ( minio, postgres, pgadmin, backend-logik kubernetes ready! )
-- Backend A
-- API definiert 
-- 
+Trotz der oben erwähnten Herausforderungen ist uns in zwei Tagen einiges gelungen:
+1. Wir haben ein neues dömänenübergreifendes Team aus Fachexperten gebildet. 
+2. Die Zusammenarbeit zwischen den Designern, Buisness Developern, Softwareentwicklerung und Marketingexperten hat herrvoragend funktoniert
+3. Wir konnten einen großen Teil der Webseite( ca. 80%) ink. Flyern und Video bereits erstellen
+4. Bei der App haben sind haben wir einen Vorführbaren Stand mit dummy Daten 
+5. Wir haben ein Docker-compose file mit allen Backend-Komponenten und können das Projekt darduch schnell deployen
+6. Die Backend Architektur ist bereits spezifiziert
+7. Wir haben die API für die Nutzer: Endkunde und Fahrer definiert 
+
+Wir haben unser Ziel erreicht ein erlebares Produkt zu bauen. 
 
 ## What we learned
 
 - nicht trival da zeit und raum achse 
-- 
+- possible in with remote work 
 
 ## What's next for 1_001_a_lebensmittel-matching_31_Lieferemma
 
-- entwicklung weiterführen backend und frontent 
-- emma ist erlebbar aber noch nicht fertig 
-- beta test phase ab 27.03 
-- einbindung von bezahl diensten ( paypal, stripe)
+*Lieferemma ist jetzt zwar erlebbar aber noch nicht fertig.*
+
+In den zwei Tagen haben wir zwar schon sehr gute Fortschritte erzielt. Allerdings werden wir noch ca. 2 Wochen Zeit investieren müssen
+um eine für Kunden und Händler nutzbare Lösung zu Pilotieren. Wir wollen noch an den folgenden Themen arbeiten:
+- Weiterentwicklung und Deployment des Backends
+- Weiterentwicklung der App-UI
+- Implementierung der API zur Kommunkation zwischen App und Backend 
+- Einbindung von bargeldlosen Bezahldiensten ( z.B. paypal oder stripe)
+
+Unser nächster Meilenstein ist der Begin einer Beta-Testphase ab dem 27.03 dafür brauchen wir den s
 
 # Englisch
 
