@@ -63,11 +63,10 @@ Die Webseite wurde mit dem opensource framework [HUGO](https://gohugo.io/) erste
 ### App
 
 Die App wird vom Endkunden und dem Fahrer genutzt. Unten sieht man den Start Bildschirmt 
-</figure>
-<img src="https://github.com/lieferemma/overview/raw/master/res/customer/001_index.png" alt="start"
-	title="Start Bildschirm" width="50%" height="50%" />
-	
-</figure>
+
+
+![](https://github.com/lieferemma/overview/raw/master/res/customer/001_index.png){:height="50%" width="50%"}
+
 
 Hier sieht man den Bestellprozess des Kunden. Der Kunde wählt auf der Karte den Lieferpunkt aus. Danach kann er Bestellen. Auf der Karte wird ihm die Position des Lieferwagens und seine Abholzeit und Code am Abholpunkt gezeigt
 
