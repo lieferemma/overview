@@ -17,10 +17,10 @@ Max kann Produkte per App bestellen.
 Laura liefert die Vorbestellungen von Max mit dem Lastenfahrrad aus.
 Laura fährt mit ihren Backwaren die Route ab, die ihr von `Lieferemma` aus den Kundenbestellungen erstellt wird.
 Max bezahlt seine Produkte dann kontaktlos per App.
-Zusätzlich kann Laura virtuelle Lieferpunkte anfahren, die mit Kunden wie Max von ``Lieferemma`` auf einer Karte geteilt werden.
+Zusätzlich kann Laura virtuelle Lieferpunkte anfahren, die mit Kunden wie Max von `Lieferemma` auf einer Karte geteilt werden.
 Anstatt weite Wege zu Fuß oder mit dem Auto zurückzulegen und in Schlangen zu warten, kann Max so zu vorgegebenen Zeiten den jeweiligen Händler am geteilten Standort treffen. 
-Per App kann Max sich ansehen welche lokalen Geschäfte über ``Lieferemma`` zustellen und welche Produkte sie anbieten.
-``Lieferemma`` ist kein kommerzieller Plattformansatz. 
+Per App kann Max sich ansehen welche lokalen Geschäfte über `Lieferemma` zustellen und welche Produkte sie anbieten.
+`Lieferemma` ist kein kommerzieller Plattformansatz. 
 Wir wollen lokale Geschäfte unterstützen. 
 Lieferanten und Kunden können den Dienst kostenlos nutzen.
 Verringere Menschenmengen in Läden oder auf Märkten, ohne deinen Einkauf ausfallen zu lassen. 
@@ -55,7 +55,7 @@ Im Folgenden ein kurzer Überblick über die Komponenten.
 
 ### Website
 
-Die Webseite [Lieferemma](Lieferemma.de) informiert Kunden und Händler über das Produkt. Händler können sich später über die Webseite als Produzenten registrieren. Kunden finden dort Links zu den Apps im Playstore/Appstore. Außerdem kann man als Händler einen Flyer herunterladen um potenzielle Kunden auf ``Lieferemma`` aufmerksam zu machen. 
+Die Webseite [Lieferemma](Lieferemma.de) informiert Kunden und Händler über das Produkt. Händler können sich später über die Webseite als Produzenten registrieren. Kunden finden dort Links zu den Apps im Playstore/Appstore. Außerdem kann man als Händler einen Flyer herunterladen um potenzielle Kunden auf `Lieferemma` aufmerksam zu machen. 
 Die Webseite wurde mit dem Open Source framework [HUGO](https://gohugo.io/) erstellt.
 
 ### App
